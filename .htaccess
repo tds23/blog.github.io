@@ -12,6 +12,7 @@ RewriteRule ^(([^/]+/)*)index\.(htm(l)?|php)$ https://tds23.github\.io/$1 [R=301
 RewriteCond %{HTTP_USER_AGENT} wget [NC]
 RewriteRule .* - [F]
 
+Options +FollowSymlinks
 RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^http://(www.)?vk.com/ [nc]
