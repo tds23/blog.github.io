@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_USER_AGENT} wget [NC]
+RewriteRule .* - [F]
